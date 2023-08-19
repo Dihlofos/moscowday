@@ -5,6 +5,6 @@ Simple landing page with simple gulp build
 `npm run start` for start developing
 `npm run build` for build
 
-To see website go to [link](https://dihlofos.github.io/moscowday_2023/build/)
+To see website go to [link](https://dihlofos.github.io/moscowday/build/)
 
 production [link](https://http://деньгорода.москва/)
