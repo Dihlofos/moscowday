@@ -1,0 +1,22 @@
+.container {
+  max-width: 118.4rem;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: content-box;
+  overflow: hidden;
+
+  @media (max-width: $laptop) {
+    min-width: 67.8rem;
+  }
+
+  @media (max-width: $tablet) {
+    min-width: initial;
+    max-width: initial;
+    padding: 0 20px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
+}
+

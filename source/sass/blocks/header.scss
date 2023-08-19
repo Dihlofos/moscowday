@@ -1,0 +1,279 @@
+.header {
+  color: $blue;
+  position: relative;
+  z-index: 6;
+
+  .container {
+    position: relative;
+    overflow: visible;
+    max-width: 144rem;
+
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: calc((100% - 144rem)/2 + 53rem);
+    border-top-left-radius: 20px;
+    z-index: 1;
+    height: 100%;
+    width: calc(100% - (100% - 144rem)/2 - 53rem);
+    max-width: 120rem;
+    object-fit: cover;
+
+    @media (max-width: $tablet) {
+      right: 0;
+      left: auto;
+      width: calc(100% - 319px);
+    }
+
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__bg-mobile {
+    display: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+
+    @media (max-width: $mobile) {
+      display: block;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    height: 72rem;
+
+    @media (max-width: $tablet) {
+      height: 467px;
+    }
+
+    @media (max-width: $mobile) {
+      height: auto;
+      flex-direction: column;
+    }
+  }
+
+  &__logo {
+    @media (max-width: $tablet) {
+      margin: 0 0 37px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 129px;
+      height: 59px;
+      margin: 0 0 33px;
+    }
+
+
+  }
+
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 53rem;
+    min-height: 100%;
+    flex-shrink: 0;
+    padding: 3rem 2rem 4.6rem 12.6rem;
+
+    @media (max-width: $tablet) {
+      width: 319px;
+      padding: 14px 19px 30px 19px;
+    }
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__date {
+    font-weight: 800;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0 0 3rem;
+
+    span {
+      color: $lightBlue
+    }
+
+    p {
+      margin: 0;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+      line-height: normal;
+      margin: 0 0 11px;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 22px;
+    }
+  }
+
+  &__content {
+    margin: 0 0 2rem;
+
+    @media (max-width: $tablet) {
+      margin: 0;
+    }
+  }
+
+  &__description {
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: normal;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 27px;
+      padding: 0 50px 0 0;
+    }
+  }
+
+  &__action {
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__button {
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    position: relative;
+    border-top-left-radius: 20px;
+    flex-grow: 1;
+  }
+
+  &__right-cont {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: $tablet) {
+      justify-content: flex-end;
+    }
+
+  }
+
+  &__nav {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 4;
+  }
+
+  &__main-title {
+    width: 100%;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @media (max-width: $mobile) {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba($black, 0.1);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      padding: 23px 14px;
+
+    }
+  }
+
+  &__main-title-big {
+    font-size: 8rem;
+    line-height: 1;
+
+    p {
+      margin: 0;
+    }
+
+    span {
+      display: inline-block;
+      width: auto;
+      background-color: $blue;
+    }
+
+    p,
+    span {
+      padding: 0.5rem 1.7rem 0.5rem;
+    }
+
+    @media (max-width: $tablet) {
+      font-size: 46px;
+
+      p,
+      span {
+        padding: 5px 12px 5px;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 40px;
+      line-height: 1.1;
+      margin: 0 0 8px;
+
+      p,
+      span {
+        padding: 0;
+      }
+
+
+      span {
+        background: transparent;
+      }
+
+    }
+  }
+
+  &__main-title-small {
+    align-self: flex-end;
+    font-size: 3.2rem;
+    line-height: 1.2;
+    background-color: $lightBlue;
+    padding: 1.1rem 10rem 2.1rem 2.2rem;
+
+    @media (max-width: $tablet) {
+      font-size: 26px;
+      line-height: normal;
+      padding: 4px 56px 8px 12px
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      background: transparent;
+      padding: 0;
+      align-self: flex-start;
+    }
+  }
+
+
+
+}

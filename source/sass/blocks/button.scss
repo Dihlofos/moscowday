@@ -1,0 +1,36 @@
+.button {
+    display: inline-flex;
+    width: 27.8rem;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    background-color: $blue;
+    color: $white;
+    padding: 2rem;
+    margin: 0;
+    border: none;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      @media (min-width: $tablet) {
+        background-color: $lightBlue;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      width: 278px;
+      height: 60px;
+      font-size: 16px;
+
+
+    }
+}

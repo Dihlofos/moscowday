@@ -1,0 +1,180 @@
+.map {
+  position: relative;
+  background-color: $blue;
+  padding: 8.9rem 0 10.1rem;
+  border-radius: 40px;
+  color: $white;
+  z-index: 3;
+
+  @media (max-width: $tablet) {
+    padding: 61px 0 0;
+
+    .container {
+      padding: 0;
+    }
+  }
+
+  @media (max-width: $tablet) {
+    border-radius: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin: 0 0 4.3rem;
+    gap: 16rem;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      margin: 0 0 35px;
+      gap: 0;
+      padding: 0 20px;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+    @media (max-width: $tablet) {
+      flex-direction: row;
+      gap: 56px;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &__title {
+    @media (max-width: $tablet) {
+      flex-shrink: 0;
+    }
+
+    @media (max-width: $mobile) {
+      margin: 0 0 20px;
+    }
+  }
+
+  &__right {
+    padding: 1rem 0 0;
+    max-width: 48.1rem;
+
+    @media (max-width: $tablet) {
+      padding: 10px 0 0;
+      max-width: 368px;
+    }
+
+    @media (max-width: $tablet) {
+      padding: 30px 0 0;
+    }
+  }
+
+  &__place {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @media (max-width: $tablet) {
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 7px;
+    }
+
+    @media (max-width: $mobile) {
+      max-width: 250px;
+    }
+  }
+
+  &__how-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__how-item {
+    a {
+      color: $white;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: $black;
+
+        @media (max-width: $tablet) {
+          color: $white;
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      margin: 0 0 2rem;
+
+      @media (max-width: $tablet) {
+        margin: 0 0 25px;
+      }
+    }
+
+    p {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 0.4rem;
+
+      @media (max-width: $tablet) {
+        font-size: 16px;
+        margin: 0 0 5px;
+      }
+    }
+
+    span {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 500;
+
+      @media (max-width: $tablet) {
+        font-size: 14px;
+        line-height: 1.3;
+      }
+    }
+
+  }
+
+  &__map {
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &--desktop {
+      display: block;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    @media (max-width:$tablet) {
+      &--desktop {
+        display: none;
+      }
+
+      &--tablet {
+        display: block;
+      }
+    }
+
+    @media (max-width: $mobile) {
+      &--tablet {
+        height: 245px;
+      }
+    }
+  }
+}

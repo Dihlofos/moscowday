@@ -1,0 +1,103 @@
+.footer {
+  position: relative;
+  color: $white;
+  background-color: $darkGray;
+  padding: 15.9rem 0 6.4rem;
+  margin-top: -7rem;
+  z-index: 1;
+
+  @media (max-width: $tablet) {
+    padding: 104px 0 60px;
+    margin-top: -70px;
+  }
+
+  @media (max-width: $mobile) {
+    padding: 124px 0 50px;
+  }
+
+  &__title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+
+    @media (max-width: $tablet) {
+      font-size: 40px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 30px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 3rem;
+
+    @media (max-width: $tablet) {
+      margin: 0 0 10px;
+    }
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      padding: 0 20px;
+      margin: 0 0 35px;
+    }
+  }
+
+  &__info {
+    font-size: 1.6rem;
+    max-width: 38.3rem;
+    margin: 0 20rem 0 0;
+
+    p {
+      margin: 0 0 2rem;
+
+      &:first-child {
+        text-transform: uppercase;
+      }
+
+      @media(max-width: $tablet) {
+        margin: 0 0 12px;
+      }
+    }
+
+    a {
+      color: $lighterBlue;
+      text-decoration: none;
+
+      &:hover {
+        color: $lightBlue
+      }
+    }
+
+    @media(max-width: $tablet) {
+      font-size: 14px;
+      max-width: 340px;
+      margin: 0 59px 20px 0;
+      padding: 10px 0 0;
+    }
+
+    @media(max-width: $mobile) {
+      max-width: none;
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    @media (max-width: $tablet) {
+      max-width: 340px;
+      margin: 0 59px 0 auto;
+    }
+
+    @media (max-width: $mobile) {
+      padding: 0 20px;
+      max-width: none;
+      margin: 0;
+    }
+
+  }
+
+}
