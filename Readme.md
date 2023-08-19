@@ -7,4 +7,4 @@ Simple landing page with simple gulp build
 
 To see website go to [link](https://dihlofos.github.io/moscowday/build/)
 
-production [link](https://http://деньгорода.москва/)
+production [link](http://деньгорода.москва/)
