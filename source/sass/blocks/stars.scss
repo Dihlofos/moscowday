@@ -161,7 +161,7 @@
           display: inline-block;
           margin-right: 1rem;
 
-          @media (max-width: $tablet) {
+          @media (max-width: 1279px) {
             display: none;
             margin-right: 15px;
           }
@@ -172,7 +172,7 @@
     &.mr {
       margin-right: 7.5rem;
 
-      @media (max-width: $tablet) {
+      @media (max-width: 1279px) {
         margin-right: 15px;
       }
 
@@ -184,7 +184,7 @@
     &.ml {
       margin-left: 7.5rem;
 
-      @media (max-width: $tablet) {
+      @media (max-width: 1279px) {
         margin-left: 15px;
       }
 
