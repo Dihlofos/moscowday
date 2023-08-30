@@ -17,12 +17,22 @@
     text-transform: uppercase;
     text-align: center;
     transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out, 0.2s border-color ease-in-out;
-    cursor: pointer;
+
+    &:disabled {
+      width: 34rem;
+    }
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
 
     &:hover,
     &:active {
       @media (min-width: $tablet) {
-        background-color: $lightBlue;
+        &:not(:disabled) {
+          background-color: $lightBlue;
+        }
+
       }
     }
 
@@ -30,6 +40,11 @@
       width: 278px;
       height: 60px;
       font-size: 16px;
+
+      &:disabled {
+        width: 340px;
+        max-width: 100%;
+      }
 
 
     }

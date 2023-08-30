@@ -175,11 +175,17 @@
     color: $black;
     transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
     border: none;
-    cursor: pointer;
+
+    &:not(:disabled) {
+      cursor: pointer;
+    }
 
     &:hover {
-      color: $white;
-      background-color: $blue;
+      &:not(:disabled) {
+        color: $white;
+        background-color: $blue;
+      }
+
     }
   }
 
